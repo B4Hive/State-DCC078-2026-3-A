@@ -1,0 +1,13 @@
+@startuml
+
+hide members
+
+class Room
+abstract class Estado <<abstract>>
+class EstadoLivre extends Estado
+class EstadoOcupado extends Estado
+class EstadoManutencao extends Estado
+class EstadoTrancado extends Estado
+Room --> "1" Estado
+
+@enduml
